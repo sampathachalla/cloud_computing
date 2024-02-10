@@ -36,13 +36,12 @@ for threads in 1 2 4 8 16 32 48 64; do
         baseline_throughput=$throughput
     fi
 
-    # Calculate efficiency (assuming Baremetal is the baseline, so efficiency is 100%)
     efficiency=100
     
-    # Output in the required format and append to the summary file
+    # storing the output in the desired format
     echo "Baremetal | 1 | $threads | $latency | $throughput | $efficiency" >> $summary_output_file
 done
 
-# Stop iperf server
+# Stopping the  server
 killall iperf
 
