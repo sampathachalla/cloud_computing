@@ -31,23 +31,23 @@ run_tests_on_containers() {
 
         sleep 5 # Short pause to ensure the iperf server starts
 
-        # Run tests for different thread counts
+        # Run tests  thread counts
         for threads in 1 2 4 8 16 32 64; do
             # Get latency and throughput
             read latency throughput <<< $(run_iperf_test "$container_name" "$threads")
 
-            # Output in the required format and append to the summary file
+            # reframing the output and push to the output file
             echo "Container | $cpu_size | $threads | $latency | $throughput" >> "$summary_output_file"
         done
 
-        # Stop iperf server inside the container
+        # Stopping the server
         sudo lxc exec "$container_name" -- killall iperf
 
         echo "Tests for $container_name complete." >> "${detailed_output_prefix}${container_name}.txt"
     done
 }
 
-# Run network tests on all containers
+# Running the containers
 run_tests_on_containers
 
 echo "Network tests on all containers are complete."
