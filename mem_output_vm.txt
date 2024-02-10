@@ -1,0 +1,280 @@
+Running sysbench memory test inside VM1 with 1 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 38592462 (3858378.59 per second)
+
+37687.95 MiB transferred (3767.95 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              38592462
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.95
+         95th percentile:                        0.00
+         sum:                                 4121.87
+
+Threads fairness:
+    events (avg/stddev):           38592462.0000/0.00
+    execution time (avg/stddev):   4.1219/0.00
+
+Attempting to clear cache inside VM1...
+Cache clear attempted for VM1.
+Running sysbench memory test inside VM2 with 2 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 2
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 24598588 (2459388.46 per second)
+
+24022.06 MiB transferred (2401.75 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              24598588
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    1.14
+         95th percentile:                        0.00
+         sum:                                13946.92
+
+Threads fairness:
+    events (avg/stddev):           12299294.0000/102345.00
+    execution time (avg/stddev):   6.9735/0.01
+
+Attempting to clear cache inside VM2...
+Cache clear attempted for VM2.
+Running sysbench memory test inside VM4 with 4 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 16356732 (1635324.74 per second)
+
+15973.37 MiB transferred (1597.00 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0002s
+    total number of events:              16356732
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    2.92
+         95th percentile:                        0.00
+         sum:                                34739.32
+
+Threads fairness:
+    events (avg/stddev):           4089183.0000/649551.80
+    execution time (avg/stddev):   8.6848/0.24
+
+Attempting to clear cache inside VM4...
+Cache clear attempted for VM4.
+Running sysbench memory test inside VM8 with 8 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 8
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 15457050 (1545310.82 per second)
+
+15094.78 MiB transferred (1509.09 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0003s
+    total number of events:              15457050
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    4.10
+         95th percentile:                        0.01
+         sum:                                74529.20
+
+Threads fairness:
+    events (avg/stddev):           1932131.2500/670207.25
+    execution time (avg/stddev):   9.3161/0.25
+
+Attempting to clear cache inside VM8...
+Cache clear attempted for VM8.
+Running sysbench memory test inside VM16 with 16 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 16
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 17618631 (1761449.96 per second)
+
+17205.69 MiB transferred (1720.17 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0005s
+    total number of events:              17618631
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.01
+         max:                                    3.26
+         95th percentile:                        0.02
+         sum:                               153681.33
+
+Threads fairness:
+    events (avg/stddev):           1101164.4375/330589.93
+    execution time (avg/stddev):   9.6051/0.11
+
+Attempting to clear cache inside VM16...
+Cache clear attempted for VM16.
+Running sysbench memory test inside VM32 with 32 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 32
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 27864533 (2785689.08 per second)
+
+27211.46 MiB transferred (2720.40 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0006s
+    total number of events:              27864533
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.01
+         max:                                    3.30
+         95th percentile:                        0.02
+         sum:                               309770.32
+
+Threads fairness:
+    events (avg/stddev):           870766.6562/291160.08
+    execution time (avg/stddev):   9.6803/0.09
+
+Attempting to clear cache inside VM32...
+Cache clear attempted for VM32.
+Running sysbench memory test inside VM48 with 64 thread(s)...
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 122880MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 29857677 (2984967.36 per second)
+
+29157.89 MiB transferred (2915.01 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0012s
+    total number of events:              29857677
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.02
+         max:                                   78.82
+         95th percentile:                        0.03
+         sum:                               623046.60
+
+Threads fairness:
+    events (avg/stddev):           466526.2031/186307.38
+    execution time (avg/stddev):   9.7351/0.07
+
+Attempting to clear cache inside VM48...
+Cache clear attempted for VM48.

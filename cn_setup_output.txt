@@ -1,0 +1,726 @@
+Creating the container with name CN1 and have 1 CPU(s) 
+Creating CN1
+Error: Failed instance creation: Failed creating instance record: Add instance info to the database: This "instances" entry already exists
+Waiting for the CN1 to start
+Installing sysbench and iperf in CN1...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Fetched 2747 kB in 2s (1699 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+iperf is already the newest version (2.1.5+dfsg1-1).
+sysbench is already the newest version (1.0.20+ds-2).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+CN1 setup completed successfully
+Creating the container with name CN2 and have 2 CPU(s) 
+Creating CN2
+Starting CN2
+Remapping container filesystem                                                                                             Waiting for the CN2 to start
+Installing sysbench and iperf in CN2...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 29.4 MB in 6s (5092 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 1s (2017 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN2 setup completed successfully
+Creating the container with name CN4 and have 4 CPU(s) 
+Creating CN4
+Starting CN4
+Remapping container filesystem                                                                                             Waiting for the CN4 to start
+Installing sysbench and iperf in CN4...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 29.4 MB in 5s (5888 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 0s (7376 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN4 setup completed successfully
+Creating the container with name CN8 and have 8 CPU(s) 
+Creating CN8
+Starting CN8
+Remapping container filesystem                                                                                             Waiting for the CN8 to start
+Installing sysbench and iperf in CN8...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Fetched 29.4 MB in 5s (5937 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 0s (7372 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN8 setup completed successfully
+Creating the container with name CN16 and have 16 CPU(s) 
+Creating CN16
+Starting CN16
+Remapping container filesystem                                                              Waiting for the CN16 to start
+Installing sysbench and iperf in CN16...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 29.4 MB in 6s (5296 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 0s (7077 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN16 setup completed successfully
+Creating the container with name CN32 and have 32 CPU(s) 
+Creating CN32
+Starting CN32
+Remapping container filesystem                                                                                             Waiting for the CN32 to start
+Installing sysbench and iperf in CN32...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 29.4 MB in 5s (5560 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 0s (7334 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN32 setup completed successfully
+Creating the container with name CN48 and have 48 CPU(s) 
+Creating CN48
+Starting CN48
+Remapping container filesystem                                                                                             Waiting for the CN48 to start
+Installing sysbench and iperf in CN48...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1366 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [272 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1412 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [233 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1044 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [235 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.1 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.1 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.5 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1142 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [211 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1366 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [224 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [839 kB]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [160 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Fetched 29.4 MB in 5s (5932 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5 mysql-common
+The following NEW packages will be installed:
+  iperf libluajit-5.1-2 libluajit-5.1-common libmysqlclient21 libpq5
+  mysql-common sysbench
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 8789 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 iperf amd64 2.1.5+dfsg1-1 [121 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-common all 2.1.0~beta3+dfsg-6 [44.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libluajit-5.1-2 amd64 2.1.0~beta3+dfsg-6 [238 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.36-0ubuntu0.22.04.1 [1302 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpq5 amd64 14.10-0ubuntu0.22.04.1 [143 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/universe amd64 sysbench amd64 1.0.20+ds-2 [120 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 1975 kB in 0s (7523 kB/s)
+Selecting previously unselected package iperf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33914 files and directories currently installed.)
+Preparing to unpack .../0-iperf_2.1.5+dfsg1-1_amd64.deb ...
+Unpacking iperf (2.1.5+dfsg1-1) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../1-libluajit-5.1-common_2.1.0~beta3+dfsg-6_all.deb ...
+Unpacking libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../2-libluajit-5.1-2_2.1.0~beta3+dfsg-6_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../3-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../4-libmysqlclient21_8.0.36-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../5-libpq5_14.10-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Selecting previously unselected package sysbench.
+Preparing to unpack .../6-sysbench_1.0.20+ds-2_amd64.deb ...
+Unpacking sysbench (1.0.20+ds-2) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient21:amd64 (8.0.36-0ubuntu0.22.04.1) ...
+Setting up libpq5:amd64 (14.10-0ubuntu0.22.04.1) ...
+Setting up iperf (2.1.5+dfsg1-1) ...
+Setting up libluajit-5.1-common (2.1.0~beta3+dfsg-6) ...
+Setting up libluajit-5.1-2:amd64 (2.1.0~beta3+dfsg-6) ...
+Setting up sysbench (1.0.20+ds-2) ...
+Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+CN48 setup completed successfully
+All the required containers have been created and setuped for experiment
