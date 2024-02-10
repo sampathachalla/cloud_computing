@@ -1,0 +1,50 @@
+Virtualization Type | Server | Client Threads | Latency (ms) | Measured Throughput (Gbits/s)
+Container | 1 | 1 | 10.4 | Gbits/sec
+Container | 1 | 2 | 0.365 | 14.0 Gbits/sec
+Container | 1 | 4 | 0.629 | 12.7 Gbits/sec
+Container | 1 | 8 | 0.276 | 14.0 Gbits/sec
+Container | 1 | 16 | 0.264 | 14.7 Gbits/sec
+Container | 1 | 32 | 166.901 | 15.7 Gbits/sec
+Container | 1 | 64 | 0.293 | 18.0 Gbits/sec
+Container | 2 | 1 | 12.2 | Gbits/sec
+Container | 2 | 2 | 0.098 | 22.4 Gbits/sec
+Container | 2 | 4 | 0.196 | 23.0 Gbits/sec
+Container | 2 | 8 | 0.622 | 24.9 Gbits/sec
+Container | 2 | 16 | 0.143 | 28.5 Gbits/sec
+Container | 2 | 32 | 0.229 | 28.7 Gbits/sec
+Container | 2 | 64 | 0.099 | 30.5 Gbits/sec
+Container | 4 | 1 | 14.2 | Gbits/sec
+Container | 4 | 2 | 0.355 | 28.1 Gbits/sec
+Container | 4 | 4 | 0.099 | 48.7 Gbits/sec
+Container | 4 | 8 | 17.552 | 51.9 Gbits/sec
+Container | 4 | 16 | 13.524 | 52.1 Gbits/sec
+Container | 4 | 32 | 0.106 | 54.3 Gbits/sec
+Container | 4 | 64 | 0.162 | 55.8 Gbits/sec
+Container | 8 | 1 | 25.0 | Gbits/sec
+Container | 8 | 2 | 0.275 | 47.2 Gbits/sec
+Container | 8 | 4 | 0.088 | 76.7 Gbits/sec
+Container | 8 | 8 | 0.220 | 98.3 Gbits/sec
+Container | 8 | 16 | 0.095 | 7.45 Gbits/sec
+Container | 8 | 32 | 0.097 | 3.65 Gbits/sec
+Container | 8 | 64 | 0.135 | 95.4 Gbits/sec
+Container | 16 | 1 | 29.5 | Gbits/sec
+Container | 16 | 2 | 0.414 | 56.6 Gbits/sec
+Container | 16 | 4 | 0.096 | 28.5 Gbits/sec
+Container | 16 | 8 | 0.105 | 24.8 Gbits/sec
+Container | 16 | 16 | 0.101 | 10.8 Gbits/sec
+Container | 16 | 32 | 0.636 | 4.94 Gbits/sec
+Container | 16 | 64 | 0.111 | 3.10 Gbits/sec
+Container | 32 | 1 | 19.2 | Gbits/sec
+Container | 32 | 2 | 0.104 | 63.4 Gbits/sec
+Container | 32 | 4 | 0.096 | 30.8 Gbits/sec
+Container | 32 | 8 | 0.105 | 27.0 Gbits/sec
+Container | 32 | 16 | 0.102 | 17.1 Gbits/sec
+Container | 32 | 32 | 3.407 | 9.94 Gbits/sec
+Container | 32 | 64 | 0.112 | 4.58 Gbits/sec
+Container | 48 | 1 | 26.5 | Gbits/sec
+Container | 48 | 2 | 0.098 | 60.0 Gbits/sec
+Container | 48 | 4 | 0.104 | 26.1 Gbits/sec
+Container | 48 | 8 | 0.098 | 21.9 Gbits/sec
+Container | 48 | 16 | 0.104 | 14.5 Gbits/sec
+Container | 48 | 32 | 0.118 | 10.5 Gbits/sec
+Container | 48 | 64 | 0.108 | 3.43 Gbits/sec
