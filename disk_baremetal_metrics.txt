@@ -1,0 +1,8 @@
+Virtualization Type,Thread Count,Total Number of Events,Throughput Read (MiB/s),Throughput Written (MiB/s)
+baremetal,1,84769,33.11,
+baremetal,2,166642,65.08,
+baremetal,4,327220,127.80,
+baremetal,8,592033,231.23,
+baremetal,16,1157889,452.23,
+baremetal,32,1951058,762.01,
+baremetal,64,2505879,978.66,
